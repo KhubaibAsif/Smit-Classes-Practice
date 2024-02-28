@@ -1,0 +1,21 @@
+body{
+   text-align:center 
+
+}
+div{
+    background-color: darkgoldenrod;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 12px; color: black;
+    border-color: black;
+    outline: auto red;
+    
+    
+}
+.kh-1{
+    font-family: fantasy;
+    background-color: violet;
+    text-align:start 
+}
+.h1{
+  color: antiquewhite;
+}

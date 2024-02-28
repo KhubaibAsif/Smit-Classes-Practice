@@ -1,0 +1,12 @@
+:root {
+  --negro: #393939;
+  --dark-purple: #24053e;
+  --eucalyptus: #44ffa1;
+  --davys-grey: #584d62;
+  --white: #ffffff;
+  --ghost-white: #fcf8ff;
+}
+
+.background{
+  background-image:url(ass);
+}
