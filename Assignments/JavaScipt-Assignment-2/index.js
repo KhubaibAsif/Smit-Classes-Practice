@@ -18,6 +18,6 @@ if (age < 12) {
         alert("Ticket price: $10");
     }
 } else {
-    // For everyone else
+    // For everyone else The Ticket Will Be
     alert("Ticket price: $12");
-}
+} 
