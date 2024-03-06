@@ -1,0 +1,53 @@
+body{
+    width: 99%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(51, 51, 51); 
+    color: white;
+    font-family: sans-serif;
+   
+}
+.container{
+    margin-top: 23px;
+    width: 600px;
+    height: 90vh;
+    display: flex;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(15, 74, 85);
+    
+}
+.studentone{
+height:100%;
+width: 100%;
+display: flex;
+flex-direction: column;
+border: 1px solid rgb(255, 255, 255);
+}
+.departmentone{
+height:100%;
+width: 100%;
+display: flex;
+flex-direction: column;
+border: 1px solid rgb(255, 255, 255);
+}
+.universityone{
+height:100%;
+width: 100%;
+display: flex;
+flex-direction: column;
+border: 1px solid rgb(255, 255, 255);
+}
+h1{ 
+    text-align: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    color: white;
+}
+
+li{
+   
+    height: 57px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* border:1px solid rgb(255, 255, 255); */
+}
