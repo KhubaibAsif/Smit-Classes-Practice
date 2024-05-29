@@ -1,35 +1,52 @@
-*{
-    text-decoration: none;
-    box-sizing: border-box;
+* {
+  text-decoration: none;
+  box-sizing: border-box;
 }
-.navbar{
-    background-color: black; font-family: ' Calibri'; padding-right: 15px; padding-left: 15px;
+.navbar {
+  background-color: black;
+  font-family: " Calibri";
+  padding-right: 15px;
+  padding-left: 15px;
 }
-.navdiv{
-    display: flex; align-items: center; 
+.navdiv {
+  display: flex;
+  align-items: center;
 }
-.side-menu{
-    display: inline-flex; align-items: center; justify-content: space-between; list-style: none;
-    padding: 0px 133px 4px;
+.side-menu {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0px 133px 4px;
 }
-.logo a{
-    font-size: 35px; font-weight: 600; color:whitesmoke ; 
+.logo a {
+  font-size: 35px;
+  font-weight: 600;
+  color: whitesmoke;
 }
-li a{
-    color: white; font-size: 18px; font-weight: bold; margin-right: 25px; 
-
+li a {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 25px;
 }
-li{
-    list-style: none;  display: inline-block; 
+li {
+  list-style: none;
+  display: inline-block;
 }
-button a{
-    color: beige; font-weight: bold; font-size: 10px; 
+button a {
+  color: beige;
+  font-weight: bold;
+  font-size: 10px;
 }
-button{
-    background-color: rgb(72, 112, 232); border-radius: 20px; 
+button {
+  background-color: rgb(72, 112, 232);
+  border-radius: 20px;
 }
-button.sign-in{
-    background-color: rgba(255, 0, 0, 0.612); font-family: sans-serif; color: yellowgreen;
+button.sign-in {
+  background-color: rgba(255, 0, 0, 0.612);
+  font-family: sans-serif;
+  color: yellowgreen;
 }
 /* .div2{
     align-items: center;

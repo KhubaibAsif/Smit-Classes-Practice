@@ -56,7 +56,7 @@ console.log("Sum of first 10 natural numbers:", sumOfNaturalNumbers);
 // 7. Array Manipulation with Loop
 var colors = [];
 colors.push("red", "green", "blue", "yellow", "orange");
-console.log("Colors:", colors); 
+console.log("Colors:", colors);
 
 // 8. Accessing Array Elements
 for (let i = 0; i < colors.length; i++) {
