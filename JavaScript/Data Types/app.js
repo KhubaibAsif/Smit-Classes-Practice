@@ -18,10 +18,10 @@
 
 // //mutable
 // var obj = {
-//   name: "Bilal",
+//   name: "Khubaib",
 // };
 
-// obj.name = "Bilal Raza";
+// obj.name = "Khubaib Asif";
 
 // console.log("obj==>", obj);
 
@@ -48,12 +48,12 @@
 // //mutable
 
 // var obj1 = {
-//   name: "Bilal",
+//   name: "Khubaib",
 // };
 
 // var obj2 = obj1;
 
-// obj1.name = "Bilal Raza";
+// obj1.name = "Khubaib Asif";
 
 // console.log("obj1=>", obj1);
 // console.log("obj2=>", obj2);
