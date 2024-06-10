@@ -9,12 +9,15 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 90vh;
-  background-color: rgb(43, 29, 29);
+  /* background-color: rgb(43, 29, 29); */
   font-family: "Roboto", sans-serif;
+  background-image: url(https://img.freepik.com/free-vector/green-circle-frame-cute-rainy-cloud-pattern-weather-vector-clipart_53876-136816.jpg?w=740&t=st=1718024490~exp=1718025090~hmac=a3b8e057e40fd5bd97a43611ad7c09461f255ab4fc2e7f8b53b8b554206f15d4);
+  background-repeat: repeat-x;
+  background-position: center;
 }
 
 .conatiner {
-  background: linear-gradient(135deg, #00feba, #5b548a);
+  background: linear-gradient(135deg, #86e5f7, #005f71);
 
   width: 350px;
   height: auto;
@@ -58,7 +61,7 @@ body {
 
 .body h2 {
   font-size: 35px;
-  color: white;
+  color: #fbed25;
   font-weight: bold;
 }
 
@@ -88,7 +91,7 @@ body {
 
 .col h5 {
   font-size: 18px;
-  color: white;
+  color: #fbed25;
 }
 .col p {
   font-size: 17px;
