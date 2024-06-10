@@ -2,21 +2,51 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather Forecast</title>
-    <link rel="stylesheet" href="style.css" />
-    <!-- <link
+    <title>Document</title>
+    <link
       rel="stylesheet"
-      href="https://fonts.google.com/share?selection.family=Oswald:wght@200..700"
-    /> -->
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Libre+Baskerville:wght@700&family=Oswald&family=Poppins:wght@300&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="container">
+    <div class="conatiner">
       <div class="searchbox">
-        <input type="text" placeholder="Enter Your City Name"/>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" > <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+        <input type="text" placeholder="Enter City Name" id="searchinput" />
+        <i class="fa-solid fa-magnifying-glass" id="serchbox"></i>
+      </div>
+
+
+      <div class="body" id="body_data">
+        <img src="image/cloud.png" alt="" id="body_img" />
+        <h2 id="temp">22</h2>
+        <h3 id="city">New Yourk</h3>
+      </div>
+
+      <div class="deatil" id="deatil">
+        <div class="col">
+          <i class="fa-solid fa-droplet"></i>
+          <div>
+            <h5 id="humidity">50%</h5>
+            <p>humidity</p>
+          </div>
+        </div>
+        <div class="col">
+          <i class="fa-solid fa-wind"></i>
+          <div>
+            <h5 id="windspeed">15 km/h</h5>
+            <p>wind speed</p>
+          </div>
+        </div>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
-  <script src="app.js"></script>
 </html>
