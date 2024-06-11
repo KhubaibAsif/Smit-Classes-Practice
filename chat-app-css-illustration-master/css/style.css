@@ -1,0 +1,521 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* #### Text */
+
+  --Pale-Violet-sub-headingatthetopoftheappUI: hsl(276, 100%, 81%);
+  --Moderate-Violet-chat-on-the-left: hsl(276, 55%, 52%);
+  --Desaturated0-Dark-Violet-chat-on-the-right: hsl(271, 15%, 43%);
+  --Grayish-Blue-placeholder-text: hsl(206, 6%, 79%);
+  --Very-Dark-Desaturated-Violet-main-heading: hsl(271, 36%, 24%);
+  --Dark-Grayish-Violet-paragraph: hsl(270, 7%, 64%);
+
+  /* #### Gradients */
+  /* These two colors are the vibrant background colors you see throughout the design and are applied as a linear gradient: */
+
+  --Light-Magenta: hsl(293, 100%, 63%);
+  --Light-Violet: hsl(264, 100%, 61%);
+
+  /* ### Secondary */
+  --White: hsl(0, 0%, 100%);
+  --Light-Grayish-Violet-app-background: hsl(270, 20%, 96%);
+  --Very-Dark-Desaturated-Violet-submit-button-background: hsl(271, 36%, 24%);
+  --Very-Light-Magenta-radio-button-outline: hsl(289, 100%, 72%);
+}
+
+body {
+  font-family: "rubik", sans-serif;
+}
+
+.big-shape {
+  z-index: 0;
+  left: -130px;
+  top: 0px;
+  position: absolute;
+  height: 85vh;
+  width: 484px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+}
+
+.second-big-shape {
+  z-index: 0;
+  right: -130px;
+  bottom: 0px;
+  position: absolute;
+  height: 85vh;
+  width: 484px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  background-color: hsla(276, 100%, 81%, 0.155);
+}
+
+main {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-child {
+  width: 80%;
+  z-index: 1;
+  position: relative;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 50%));
+}
+
+.mob {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.mob-child {
+  height: 620px;
+  width: 280px;
+  background-color: var(--White);
+  box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.249);
+  border-radius: 35px;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.mob-second {
+  position: relative;
+  height: 100%;
+  border-radius: 26px;
+  width: 100%;
+  /* background-color:hsla(293, 100%, 63%, 0.035); */
+  background-color: var(--Light-Grayish-Violet-app-background);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+}
+
+.oval {
+  position: absolute;
+  top: -2px;
+  height: 34px;
+  border-radius: 25px;
+  width: 56%;
+  background-color: var(--White);
+  z-index: 2;
+  /* background-color: red; */
+}
+
+.header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 8px;
+  position: relative;
+  top: 0px;
+  height: 15%;
+  background-image: linear-gradient(
+    to left,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  /* bgc */
+  width: 100%;
+}
+
+.text-icon {
+  color: var(--White);
+}
+
+.first-line {
+  color: rgba(255, 255, 255, 0.89);
+  font-weight: 400;
+}
+
+.second-line {
+  font-size: clamp(10px, 3vw, 11px);
+  color: var(--Light-Magenta);
+}
+
+.left-arrow {
+  /* ?color: rgba(255, 255, 255, 0.721); */
+  color: white;
+}
+
+.header-child {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.text-icon {
+  display: flex;
+  width: 70%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.avatar {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.avatar img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+
+.menu-icon {
+  display: flex;
+  align-items: center;
+  /* color: ; */
+  color: rgba(255, 255, 255, 0.721);
+}
+
+.chats {
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: baseline;
+}
+
+.chat-child {
+  margin-left: 10px;
+  width: 63%;
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  color: var(--Moderate-Violet-chat-on-the-left);
+  margin-top: 8px;
+}
+
+.first-chat,
+.second-chat {
+  margin-bottom: 10px;
+  background-color: hsl(276deg 100% 81% / 26%);
+  padding: 10px 10px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 4px;
+}
+
+.my-reply {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 100%;
+}
+
+.my-reply-child {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 100%;
+  /* justify-content: end; */
+}
+
+.dogimages {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+
+.dogimages-child {
+  display: flex;
+  width: 75%;
+  justify-content: space-evenly;
+}
+
+.dogimages img {
+  height: 50px;
+  width: 50px;
+  border-radius: 15px;
+}
+
+.first-reply,
+.second-reply {
+  margin-bottom: 10px;
+  background-color: var(--White);
+  padding: 10px 10px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 12px;
+  font-size: 10px;
+  width: 61%;
+  margin-right: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.105);
+}
+
+.first-reply {
+  margin-top: 10px;
+}
+
+.second-reply {
+  width: 40%;
+}
+
+.anyway i {
+  font-size: 4px;
+  color: white;
+}
+
+.voices {
+  width: 100%;
+}
+
+.voices-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.price {
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  padding: 13px 10px;
+  margin-top: 0px;
+  margin-left: 10px;
+  font-size: 10px;
+  color: var(--Light-Magenta);
+  border-top-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 4px;
+  background-image: linear-gradient(
+    to right,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  /* background-color: black; */
+}
+
+.margin {
+  margin-top: 10px;
+}
+
+.num {
+  color: var(--White);
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.circle-magenta {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 1px solid hsl(293, 78%, 75%);
+  /* border: 1px solid var(--Light-Magenta); */
+}
+
+.price-childs {
+  /* background-image: linear-gradient(); */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.font {
+  width: 60%;
+}
+
+.typing {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.typing-child {
+  /* padding: 10px 20px; */
+  padding-block: 5px;
+  padding-right: 10px;
+  padding-left: 25px;
+  background-color: var(--White);
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  align-items: center;
+}
+
+.send-logo {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.typing-text {
+  color: rgba(0, 0, 0, 0.342);
+  font-size: 12px;
+}
+
+.circle-send {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  /* z-index: 50; */
+  width: 100%;
+  background-color: var(--Very-Dark-Desaturated-Violet-main-heading);
+  color: white;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-heading h1 {
+  font-size: 45px;
+  padding-block: 30px;
+  color: var(--Very-Dark-Desaturated-Violet-main-heading);
+  font-weight: 500;
+}
+
+.main-p p {
+  font-size: clamp(16px, 3vw, 18px);
+  line-height: 1.5;
+  width: 90%;
+  font-weight: 400;
+  color: hsla(271, 15%, 43%, 0.556);
+  /* color: var(--Desaturated0-Dark-Violet-chat-on-the-right); */
+}
+@media (max-width: 440px) {
+  .first-reply,
+  .second-reply {
+    padding: 5px 10px;
+  }
+  .dogimages img {
+    height: 40px;
+    width: 40px;
+    border-radius: 15px;
+  }
+  .margin {
+    margin-top: 3px;
+  }
+  .first-chat {
+    margin-bottom: 5px;
+    padding: 5px 10px;
+  }
+  .mob-child {
+    height: 550px;
+    width: 260px;
+  }
+  .chat-child {
+    margin-left: 10px;
+    width: 63%;
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    color: var(--Moderate-Violet-chat-on-the-left);
+    margin-top: 2px;
+  }
+  .main-child {
+    width: 100%;
+  }
+  .main-heading {
+    text-align: center;
+  }
+  .main-p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .second-big-shape {
+    display: none;
+  }
+}
+@media (min-width: 380px) and (max-width: 431px) {
+  .main-child {
+    grid-template-columns: repeat(auto-fit, minmax(410px, 50%));
+  }
+  /* .big-shape {
+    z-index: 0;
+    left: -130px;
+    top: 0px;
+    position: absolute;
+    height: 57vh;
+    width: 355px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+} */
+  .big-shape {
+    z-index: 0;
+    left: -130px;
+    top: 0px;
+    position: absolute;
+    height: 56vh;
+    width: 361px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  }
+}
+@media (max-width: 376px) {
+  .main-child {
+    height: 150vh;
+    grid-template-columns: repeat(auto-fit, minmax(375px, 50%));
+  }
+  main {
+    height: 100%;
+  }
+  .big-shape {
+    z-index: 0;
+    left: -130px;
+    top: 0px;
+    position: absolute;
+    height: 73vh;
+    width: 335px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  }
+}
+@media (max-width: 345px) {
+  .main-child {
+    height: 100vh;
+    grid-template-columns: repeat(auto-fit, minmax(344px, 50%));
+  }
+  .big-shape {
+    z-index: 0;
+    left: -130px;
+    top: 0px;
+    position: absolute;
+    height: 48vh;
+    width: 335px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  }
+}
