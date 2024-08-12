@@ -17,9 +17,9 @@ interface User {
   favNumbers: number[];
 }
 
-const user: User = {
+const User: User = {
   firstName: "Khubaib",
-  lastName: "Asif",
+  lastName: "Asif",         
   favNumbers: [10, 12],
   favSubjects: ["English", "Urdu"],
   age: 20,

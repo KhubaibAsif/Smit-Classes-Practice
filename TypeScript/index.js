@@ -9,7 +9,7 @@ console.log("userAge=>", userAge);
 userIsMarried = false;
 
 
-const user: User = {
+const User: User = {
   firstName: "Khubaib",
   lastName: "Asif",
   favNumbers: [10, 12],
